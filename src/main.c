@@ -4,11 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h> // For malloc
 
-#ifdef __EMSCRIPTEN__
-void main_loop__em()
-{
-}
-#endif
 
 void data_callback(ma_device* pDevice, void* pOutput, const void* pInput, ma_uint32 frameCount)
 {
